@@ -1,9 +1,0 @@
-# Telegram Bot
-aiogram==3.4.1
-
-# Telegraph для публикации рецептов
-telegraph==2.2.0
-
-# Дополнительно
-aiohttp==3.9.1
-pydantic==2.5.3
