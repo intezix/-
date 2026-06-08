@@ -1,0 +1,12 @@
+[Unit]
+Description=PP BOT cleanup pb_events timer (daily)
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1d
+Unit=cleanup_events.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

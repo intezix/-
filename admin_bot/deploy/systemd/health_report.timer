@@ -1,0 +1,12 @@
+[Unit]
+Description=PP BOT admin_bot health report timer (12 hours)
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=12h
+Unit=health_report.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

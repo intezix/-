@@ -1,0 +1,11 @@
+[Unit]
+Description=PP BOT admin_bot health report (one-shot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/actualppbotnooplata
+EnvironmentFile=/opt/actualppbotnooplata/admin_bot/.env
+ExecStart=/opt/actualppbotnooplata/.venv/bin/python admin_bot/scripts/send_health_report.py
+

@@ -1,0 +1,11 @@
+[Unit]
+Description=PP BOT cleanup pb_events (one-shot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/actualppbotnooplata
+EnvironmentFile=/opt/actualppbotnooplata/admin_bot/.env
+ExecStart=/opt/actualppbotnooplata/.venv/bin/python admin_bot/scripts/cleanup_events.py
+
